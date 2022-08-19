@@ -24,20 +24,22 @@ a {
   border-radius: 50%;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-}
-
 .icon {
   padding: 15px;
   color: #f3fafe;
   background-color: #222223;
   font-size: 12px;
   border-radius: 10px;
+  transition-duration: 176ms;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(0.96);
+}
+
+.icon:active {
+  transform: scale(0.92);
 }
 
 .icon--big {
@@ -146,6 +148,11 @@ a {
   font-size: 19px;
   font-weight: 500;
   color: #222223;
+  transition-duration: 176ms;
+}
+
+.icon:hover ~ .section-hero__get-cards-text {
+  transform: translateX(5px);
 }
 
 .section-hero__cards {
@@ -156,6 +163,8 @@ a {
 .section-hero__cards-left {
   flex: 0.7;
   background: linear-gradient(106.01deg, #80d1ff 0%, #44b2f1 69.58%);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .section-hero__visa {
@@ -169,6 +178,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .section-hero__cards-right-icons {
