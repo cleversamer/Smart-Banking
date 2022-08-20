@@ -15,23 +15,23 @@ ul {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .text-wrapped {
-  border: 3px solid #ff8a1f;
   border-radius: 50%;
+  border: 3px solid #ff8a1f;
 }
 
 .icon {
-  padding: 15px;
-  color: #f3fafe;
   background-color: #222223;
-  font-size: 12px;
   border-radius: 10px;
-  transition-duration: 176ms;
+  color: #f3fafe;
   cursor: pointer;
+  font-size: 12px;
+  padding: 15px;
+  transition-duration: 176ms;
 }
 
 .icon:hover {
@@ -57,22 +57,22 @@ a {
 
 /* Header */
 .header {
-  width: 100vw;
+  background-color: #f8fcff;
   height: 100vh;
   padding: 20px 60px;
-  background-color: #f8fcff;
+  width: 100vw;
 }
 
 /* Nav */
 .nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav__list {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 10px;
 }
 
@@ -82,20 +82,20 @@ a {
 
 .nav__link {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 .nav__icon-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #dfdfdf;
-  padding: 10px;
   border-radius: 50%;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  padding: 10px;
+  width: 30px;
 }
 
 .nav__icon {
@@ -110,44 +110,44 @@ a {
 
 .section-hero__info {
   display: flex;
-  width: 100%;
   height: 270px;
+  width: 100%;
 }
 
 .section-hero__heading {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
   gap: 15px;
+  justify-content: space-between;
 }
 
 .section-hero__title {
   font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 800;
   font-size: 42px;
+  font-weight: 800;
 }
 
 .section-hero__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
   color: #535354;
-  width: 280px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 30px;
+  width: 280px;
 }
 
 .section-hero__get-cards {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 10px;
 }
 
 .section-hero__get-cards-text {
+  color: #222223;
   font-family: "Roboto", sans-serif;
   font-size: 19px;
   font-weight: 500;
-  color: #222223;
   transition-duration: 176ms;
 }
 
@@ -156,42 +156,42 @@ a {
 }
 
 .section-hero__cards {
-  flex: 1;
   display: flex;
+  flex: 1;
 }
 
 .section-hero__cards-left {
-  flex: 0.7;
   background: linear-gradient(106.01deg, #80d1ff 0%, #44b2f1 69.58%);
-  border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  flex: 0.7;
 }
 
 .section-hero__visa {
-  width: 270px;
   transform: rotate(-25deg);
+  width: 270px;
 }
 
 .section-hero__cards-right {
-  flex: 0.3;
-  background: linear-gradient(201.5deg, #ffd968 4.52%, #fac422 102.63%);
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border-top-right-radius: 3px;
+  background: linear-gradient(201.5deg, #ffd968 4.52%, #fac422 102.63%);
   border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  flex: 0.3;
+  justify-content: center;
 }
 
 .section-hero__cards-right-icons {
-  width: fit-content;
   display: grid;
-  place-content: center;
+  grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 15px;
+  place-content: center;
+  width: fit-content;
 }
 
 .section-hero__cards-right .icon {
-  width: fit-content;
   height: fit-content;
+  width: fit-content;
 }
