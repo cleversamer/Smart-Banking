@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #f8fcff;
+  /* background-color: #f8fcff; */
 }
 
 ul {
@@ -61,4 +61,64 @@ a {
 
 .icon--circle {
   border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  padding-top: 100px;
+  background-color: #f8fcff;
+}
+
+.footer__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer__list {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__logo {
+  color: #17181a;
+}
+
+.footer__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer__list-auth {
+  gap: 40px;
+}
+
+.footer__list-social .icon {
+  background: transparent;
+  color: #000;
+}
+
+.footer__copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyrights-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #1b1b1b59;
+}
+
+.footer__copyrights-break {
+  width: 50%;
+  height: 1px;
+  background-color: #d3d3d3;
 }
