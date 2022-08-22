@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding: 20px 60px;
+  background-color: #f8fcff;
+}
+
 ul {
   list-style: none;
 }
