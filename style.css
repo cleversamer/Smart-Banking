@@ -59,3 +59,7 @@ a {
   background-color: #f9fdff;
   color: #84848d;
 }
+
+.icon--circle {
+  border-radius: 50%;
+}
