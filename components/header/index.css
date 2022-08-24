@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100%;
   padding: 20px 60px;
+  margin-bottom: 40px;
 }
 
 /* Nav */
@@ -180,4 +181,174 @@
   font-weight: 500;
   letter-spacing: 0.01em;
   color: #5f5f64;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    padding: 20px;
+  }
+
+  .section-hero__heading {
+    flex: 0.4;
+    justify-content: space-evenly;
+  }
+
+  .section-hero__heading .section-hero__title {
+    font-size: 36px;
+  }
+
+  .section-hero__heading .section-hero__description {
+    font-size: 16px;
+  }
+
+  .section-hero__heading .section-hero__get-cards .icon {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .section-hero__heading .section-hero__get-cards-text {
+    font-size: 16px;
+  }
+
+  .section-hero__cards {
+    flex: 0.65;
+  }
+
+  .section-hero__cards .section-hero__cards-left {
+    flex: 0.6;
+  }
+
+  .section-hero__cards .section-hero__cards-left .section-hero__visa {
+    width: 250px;
+  }
+
+  .section-hero__cards .section-hero__cards-right {
+    flex: 0.35;
+  }
+
+  .section-hero__plans {
+    gap: 15px;
+  }
+
+  .section-hero__plans .section-hero__plan-icon {
+    width: 18px;
+  }
+
+  .section-hero__plans .section-hero__plan-heading {
+    font-size: 16px;
+  }
+
+  .section-hero__plans .section-hero__plan-heading:first-child {
+    font-size: 22px;
+  }
+
+  .section-hero__plans .section-hero__plan-description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: fit-content;
+  }
+
+  .section-hero__info {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+    gap: 80px;
+  }
+
+  .section-hero__heading {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .section-hero__heading .section-hero__title {
+    font-size: 48px;
+  }
+
+  .section-hero__heading .section-hero__description {
+    font-size: 18px;
+  }
+
+  .section-hero__heading .section-hero__get-cards-text {
+    font-size: 18px;
+  }
+
+  .section-hero__cards {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+  }
+
+  .section-hero__cards .section-hero__cards-left .section-hero__visa {
+    width: 230px;
+  }
+
+  .section-hero__plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+  }
+
+  .section-hero__plans .section-hero__plan {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    padding-bottom: 240px;
+  }
+
+  .nav__icon-container {
+    display: none;
+  }
+
+  .section-hero__info {
+    margin-bottom: 450px;
+    gap: 50px;
+  }
+
+  .section-hero__cards .section-hero__cards-left .section-hero__visa {
+    width: 190px;
+  }
+
+  .section-hero__get-cards {
+    gap: 7px;
+  }
+
+  .section-hero__plans {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .section-hero__plans .section-hero__plan {
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+  }
+
+  .section-hero__plan .section-hero__plan-icon {
+    width: 24px;
+  }
+
+  .section-hero__plans .section-hero__plan-heading {
+    font-size: 24px;
+  }
+
+  .section-hero__plans .section-hero__plan-heading:first-child {
+    font-size: 28px;
+  }
+
+  .section-hero__plans .section-hero__plan-description {
+    font-size: 20px;
+  }
 }
