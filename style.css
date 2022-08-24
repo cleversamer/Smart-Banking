@@ -62,3 +62,509 @@ a {
 .icon--circle {
   border-radius: 50%;
 }
+
+/* Header */
+.header {
+  height: 100vh;
+  width: 100%;
+  padding: 20px 60px;
+  margin-bottom: 40px;
+}
+
+/* Nav */
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.nav__logo {
+  color: #17181a;
+}
+
+.nav__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nav__icon-container {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  padding: 10px;
+  width: 30px;
+}
+
+.nav__icon {
+  color: #6b7275;
+  font-size: 10px;
+}
+
+/* Hero section */
+.section-hero {
+  padding-top: 60px;
+}
+
+.section-hero__info {
+  display: flex;
+  height: 270px;
+  width: 100%;
+}
+
+.section-hero__heading {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.section-hero__title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.section-hero__description {
+  color: #535354;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 280px;
+}
+
+.section-hero__get-cards {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.section-hero__get-cards-text {
+  color: #222223;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  transition-duration: 176ms;
+}
+
+.icon:hover ~ .section-hero__get-cards-text {
+  transform: translateX(5px);
+}
+
+.section-hero__cards {
+  display: flex;
+  flex: 1;
+}
+
+.section-hero__cards-left {
+  background: linear-gradient(106.01deg, #80d1ff 0%, #44b2f1 69.58%);
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  flex: 0.7;
+}
+
+.section-hero__visa {
+  transform: rotate(-25deg);
+  width: 270px;
+}
+
+.section-hero__cards-right {
+  align-items: center;
+  background: linear-gradient(201.5deg, #ffd968 4.52%, #fac422 102.63%);
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  flex: 0.3;
+  justify-content: center;
+}
+
+.section-hero__cards-right-icons {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-content: center;
+  width: fit-content;
+}
+
+.section-hero__cards-right .icon {
+  height: fit-content;
+  width: fit-content;
+}
+
+.section-hero__plans {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  height: 180px;
+}
+
+.section-hero__plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+.section-hero__plan .section-hero__plan-icon {
+  width: 24px;
+}
+
+.section-hero__plan-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.section-hero__plan:first-child .section-hero__plan-heading {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.section-hero__plan:first-child .section-hero__plan-icon {
+  width: 18px;
+  margin-bottom: -5px;
+}
+
+.section-hero__plan .section-hero__plan-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #5f5f64;
+}
+
+/* Section skills */
+.section-skills {
+  width: 100%;
+  height: 300px;
+  background-color: #52c0ff;
+  position: relative;
+}
+
+.section-skills__cricle {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, transparent 50%, #45b3f2 50%),
+    linear-gradient(90deg, #45b3f2 50%, transparent 50%);
+}
+
+.section-skills__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.section-skills__skill {
+  max-width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-skills__skill-heading {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+.section-skills__skill-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #5f5f64;
+}
+
+/* Section testimonials */
+.section-testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.section-testimonials__info {
+  max-width: 660px;
+  text-align: center;
+}
+
+.section-testimonials__heading {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: 0.01em;
+  color: #0d1111;
+  margin-bottom: 20px;
+}
+
+.section-testimonials__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: #767e7e;
+  margin-bottom: 70px;
+}
+
+.section-testimonials__testimonials {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.section-testimonials__testimonial-item {
+  flex: 1;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-top: 1.4px solid #a9b3ab;
+  border-right: 1.4px solid #a9b3ab;
+  border-bottom: 1.4px solid #a9b3ab;
+}
+
+.section-testimonials__testimonial-item:last-child {
+  border-right: 0;
+}
+
+.section-testimonials__testimonial-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.4em;
+  color: #718176;
+}
+
+.section-testimonials__testimonial-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+/* Section feature */
+.section-feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+
+.section-feature__left {
+  width: 550px;
+  height: 430px;
+  background-color: #cfedff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 15px 70px 100px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.section-feature__left .section-feature__image {
+  width: 460px;
+  position: absolute;
+  left: -45px;
+  border-radius: 20px;
+}
+
+.section-feature__right {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-feature__right .section-feature__heading {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -0.01em;
+  color: #192430;
+  margin-bottom: 10px;
+}
+
+.section-feature__right .section-feature__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #727272;
+}
+
+.section-feature__right .section-feature__feature {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-feature__right .section-feature__feature-icon {
+  background: linear-gradient(127.95deg, #8889ff 13.15%, #3c3dff 103.51%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.section-feature__right .section-feature__feature-heading {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.section-feature__right .section-feature__feature-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+/* Section newsletter */
+.section-newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 60px;
+  background-color: #41b3f4;
+}
+
+.section-newsletter__left {
+  flex: 1;
+}
+
+.section-newsletter__left .section-newsletter__heading {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.02em;
+  margin-bottom: 70px;
+  text-transform: capitalize;
+}
+
+.section-newsletter__left .section-newsletter__left-subscribe {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  width: 160px;
+  height: 58px;
+  color: #fff;
+  background-color: #e15c19;
+  border: none;
+  transition-duration: 176ms;
+  cursor: pointer;
+}
+
+.section-newsletter__left .section-newsletter__left-subscribe:active {
+  transform: scale(0.96);
+}
+
+.section-newsletter__right {
+  flex: 1;
+  position: relative;
+}
+
+.section-newsletter__right-bg {
+  width: 250%;
+}
+
+.section-newsletter__right-image {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.92;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 60px;
+  padding-top: 100px;
+}
+
+.footer__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer__list {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__logo {
+  color: #17181a;
+}
+
+.footer__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer__list-auth {
+  gap: 40px;
+}
+
+.footer__list-social .icon {
+  background: transparent;
+  color: #000;
+}
+
+.footer__copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyrights-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #1b1b1b59;
+}
+
+.footer__copyrights-break {
+  width: 50%;
+  height: 1px;
+  background-color: #d3d3d3;
+}
